@@ -8,3 +8,10 @@
     color: white;
     flex: 1;
 }
+
+.button-main:hover {
+    transform: scale(0.6);
+    transition-duration: 0.5s;
+    color: rgb(156, 177, 237);
+}
+
