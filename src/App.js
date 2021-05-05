@@ -11,14 +11,16 @@ const App = () => {
   const [ results, setResults ] = useState("");
 
   const thisIsText = (value) => {
-    setText((text) => [...text, value + " "])
+    setText((text) => [...text, value + ""])
   }
 
   const calculations = () => {
     const input = text.join("")
-
+    console.log(input)
+    console.log(input.length)
     setResults(math.evaluate(input))
   }
+
 
   const clearDisplay = () => {
     setText("")
