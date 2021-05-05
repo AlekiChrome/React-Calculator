@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from "react";
+import * as math from "mathjs";
 import Buttons from "./components/Buttons";
 import Display from "./components/Display";
 
@@ -11,6 +12,12 @@ const App = () => {
 
   const thisIsText = (value) => {
     setText((text) => [...text, value + " "])
+  }
+
+  const calculations = () => {
+    const input = text.join("")
+
+    setResults(math.evaluate(input))
   }
 
   const clearDisplay = () => {
@@ -48,7 +55,7 @@ const App = () => {
         <div className="button-row">
           <Buttons symbol="0" handleClick={thisIsText}/>
           <Buttons symbol="." handleClick={thisIsText}/>
-          <Buttons symbol="=" />
+          <Buttons symbol="=" handleClick={calculations}/>
           <Buttons symbol="-" color={colorSwitch} handleClick={thisIsText}/>
         </div>
 
