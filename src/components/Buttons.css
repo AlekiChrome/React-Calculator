@@ -4,14 +4,14 @@
     align-items: center;
     height: 4em;
     font-size: 20px;
-    border: 0.5px solid rgb(61, 61, 61);
+    border: 0.5px solid rgba(255, 255, 255, 0.05);
     color: white;
     flex: 1;
 }
 
 .button-main:hover {
-    transform: scale(0.6);
+    transform: scale(1);
     transition-duration: 0.5s;
-    color: rgb(156, 177, 237);
+    background: rgba(255, 255, 255, 0.165);
+    color: rgb(150, 83, 204);
 }
-
