@@ -1,7 +1,6 @@
 import './App.css';
 import { useState } from "react";
 import * as math from "mathjs";
-import NumberFormat from 'react-number-format';
 import Buttons from "./components/Buttons";
 import Display from "./components/Display";
 
@@ -9,7 +8,7 @@ import Display from "./components/Display";
 const App = () => {
 
   const [ text, setText ] = useState("");
-  const [ results, setResults ] = useState("");
+  const [ results, setResults ] = useState("0");
 
   const thisIsText = (value) => {
     setText((text) => [...text, value + ""])
@@ -25,7 +24,7 @@ const App = () => {
 
   const clearDisplay = () => {
     setText("")
-    setResults("")
+    setResults("0")
   }
 
   const colorSwitch = "rgb(51, 51, 51)";

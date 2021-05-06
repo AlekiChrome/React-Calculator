@@ -1,4 +1,5 @@
 import React from 'react'
+import Thousands from "./Thousands";
 import "./Display.css"
 
 const Display = ({ text, results }) => {
@@ -6,7 +7,7 @@ const Display = ({ text, results }) => {
         <div className="display-main">
             <div className="results">
                 <h1>
-                    {results}
+                    {Thousands(results)}
                 </h1>
             </div>
 
