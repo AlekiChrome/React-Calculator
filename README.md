@@ -11,8 +11,6 @@
 
 ![ReactJS-Calculator-low-fidelity-wireframe](src/images/React-Calculator.png)
 
----
-
 > Breaking down the project components that I believed I would need, I created a mock-up.
 This has been broken into 4 components:
 1. The display component
@@ -29,5 +27,8 @@ This has been broken into 4 components:
 
 ---
 >*React Calculator Demo*
-
 ![ReactJS-Calculator-gif](src/images/React-Calc-giphy.gif)
+
+<br />
+
+[Calculator Site](https://candys-react-calculator.netlify.app/)
