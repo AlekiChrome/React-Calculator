@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from "react";
 import * as math from "mathjs";
+import NumberFormat from 'react-number-format';
 import Buttons from "./components/Buttons";
 import Display from "./components/Display";
 
@@ -32,7 +33,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="calc-main">
-        <Display text={text} results={results}/>
+        <Display text={text} results={results} />
         <div className="button-row">
           <Buttons symbol="7" handleClick={thisIsText}/>
           <Buttons symbol="8" handleClick={thisIsText}/>

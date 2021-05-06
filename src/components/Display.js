@@ -5,7 +5,9 @@ const Display = ({ text, results }) => {
     return (
         <div className="display-main">
             <div className="results">
-                <h1>{results}</h1>
+                <h1>
+                    {results}
+                </h1>
             </div>
 
             <div className="text">
