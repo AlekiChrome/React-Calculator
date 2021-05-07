@@ -55,13 +55,13 @@ const App = () => {
         </div>
 
         <div className="button-row">
-          <Buttons symbol="0" handleClick={thisIsText}/>
+          <Buttons symbol="ac" handleClick={clearDisplay} />
           <Buttons symbol="." handleClick={thisIsText}/>
-          <Buttons symbol="=" handleClick={calculations}/>
+          <Buttons symbol="0" handleClick={thisIsText}/>
           <Buttons symbol="-" color={colorSwitch} handleClick={thisIsText}/>
         </div>
 
-          <Buttons symbol="Clear" color="rgb(156, 177, 237)" handleClick={clearDisplay}/>
+          <Buttons symbol="=" color="rgb(156, 177, 237)" handleClick={calculations}/>
 
 
 
