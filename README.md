@@ -6,6 +6,7 @@
 1. [Low Fidelity Wireframe](#low-fidelity-wireframe)
 2. [High Fidelity Mockup](#high-fidelity-mockup)
 3. [Calculator Demo](#react-calculator-demo)
+- [Project Checklist](#Project-checklist)
 
 
 ## General Info
@@ -56,6 +57,11 @@ I wanted something that looked and felt familiar, but also stood out. I played w
 > ### *React Calculator Demo*
 ![ReactJS-Calculator-gif](src/images/React-Calc-giphy.gif)
 
-> This is the current version on the calculator and how it both looks and operates. The link is below. 
+> This is the current version on the calculator and how it both looks and operates. The link is below.
 
 [Calculator Site](https://candys-react-calculator.netlify.app/)
+
+> ### Project Checklist
+> Below is the link to the checklist I made to follow steps and stay on track for my calculator.
+
+[Trello Calculator Checklist](https://trello.com/b/hC5Vg14k/candys-calculator-project)
