@@ -13,6 +13,10 @@ const App = () => {
   const thisIsText = (value) => {
     setText((text) => [...text, value + ""])
   }
+  
+  /*
+    I notice that the text state initalizes as a string but then in the thisIsText function it becomes an array on line 14. I suggest staying with either an array or string.
+  */
 
   const calculations = () => {
     const input = text.join("")
@@ -28,6 +32,32 @@ const App = () => {
   }
 
   const colorSwitch = "rgb(51, 51, 51)";
+  
+  /* 
+    This looks great! You can dry out your code by storing it as am array of arrays too.
+    let content = [
+      [
+        { symbol: "7", handleClick: thisIsText },
+        { symbol: "8", handleClick: thisIsText },
+        { symbol: "9", handleClick: thisIsText },
+        { symbol: "/", color:{colorSwitch}, handleClick: thisIsText }
+      ],
+      [...],
+      [...]
+    ]
+    
+    You can then recreate your elements by mapping though both arrays like so.
+    
+    let contentElements = content.map((row)=>{
+      let rowRender = row.map((element)=>{
+        return <Buttons symbol={element.symbol} handleClick={element.handleClick}/>
+      })
+      return <div className="button-row">{rowRender}</div>
+    })
+    
+    This is just a incomplete sample example of how it would look. If you're interested in a challenge you're welcome to try to get this working.
+  
+  */
 
   return (
     <div className="App">
