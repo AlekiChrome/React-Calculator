@@ -12,13 +12,14 @@ const App = () => {
 
   const thisIsText = (value) => {
     setText((text) => [...text, value + ""])
+    
   }
+
 
   const calculations = () => {
     const input = text.join("")
     console.log(input)
-    console.log(input.length)
-    setResults(math.evaluate(input))
+    setResults(Math.round(math.evaluate(input)))
   }
 
 
@@ -27,6 +28,14 @@ const App = () => {
     setResults("0")
   }
 
+  const posNeg = () => {
+    let num = parseInt(results);
+  
+    setResults((num * -1).toString());
+
+    setText(num.toString());
+  }
+  
   const colorSwitch = "rgb(51, 51, 51)";
 
   return (
@@ -59,9 +68,11 @@ const App = () => {
           <Buttons symbol="." handleClick={thisIsText}/>
           <Buttons symbol="0" handleClick={thisIsText}/>
           <Buttons symbol="-" color={colorSwitch} handleClick={thisIsText}/>
+          <Buttons symbol="±" color={colorSwitch}  handleClick={posNeg} />
         </div>
 
           <Buttons symbol="=" color="rgb(156, 177, 237)" handleClick={calculations}/>
+
 
 
 

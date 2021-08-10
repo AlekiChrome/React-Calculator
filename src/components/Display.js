@@ -18,4 +18,4 @@ const Display = ({ text, results }) => {
     )
 }
 
-export default Display
+export default Display;

@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react';
 
  const Thousands = results => {
   let output = "";
@@ -12,9 +12,9 @@ import React from 'react'
   }
   if (parseFloat(results) < 0) {
     negative = true;
-    output = output.substring(1);
+    console.log(output)
   }
-  return negative ? "-" + parseFloat(output).toLocaleString() + decimal : parseFloat(output).toLocaleString() + decimal
+  return negative ? parseFloat(output).toLocaleString() + decimal : parseFloat(output).toLocaleString() + decimal
 };
 
 
